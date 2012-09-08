@@ -12,7 +12,7 @@ public class Screen1 extends Activity {
 	@Override
 	  public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_screen1);
+	    setContentView(R.layout.activity_screen2);
 	}
 
 }
