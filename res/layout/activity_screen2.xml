@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+   <!--  <RelativeLayout
+        android:id="@+id/rel_offerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="0.5"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/text_offerInfo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="50% Off"
+            android:textColor="@android:color/black" />
+    </RelativeLayout> -->
+
+    <ImageView
+        android:id="@+id/image_bizLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="3dp"
+        android:src="@drawable/ic_bizicon" />
+
+    <Button
+        android:id="@+id/disabledBtn_totalVisits"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/image_bizLogo"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/darker_gray"
+        android:text="999"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text_lifeTimeVisits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/disabledBtn_totalVisits"
+        android:layout_alignRight="@+id/disabledBtn_totalVisits"
+        android:layout_below="@+id/disabledBtn_totalVisits"
+        android:padding="2dp"
+        android:text="Lifetime Visits"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/button_unlockOffer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/image_bizLogo"
+        android:layout_alignLeft="@+id/image_bizLogo"
+        android:layout_marginBottom="25dp"
+        android:text="Unlock" />
+
+    <TextView
+        android:id="@+id/text_bizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/image_bizLogo"
+        android:layout_toRightOf="@+id/image_bizLogo"
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp"
+        android:text="The Ambrosia"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/text_bizAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_bizName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_bizName"
+        android:paddingBottom="2dp"
+        android:text="Ground Floor, Heera Grace, Kowdiar, Trivandrum"
+        android:textSize="12dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_bizPhone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/text_bizAddress"
+        android:layout_toRightOf="@+id/image_bizLogo"
+        android:background="@null"
+        android:src="@drawable/phone" />
+
+    <Button
+        android:id="@+id/disabledBtn_visitsToNextLevel"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBaseline="@+id/disabledBtn_totalVisits"
+        android:layout_alignBottom="@+id/disabledBtn_totalVisits"
+        android:layout_alignLeft="@+id/imgBtn_bizPhone"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp"
+        android:text="999"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text_visitsTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/disabledBtn_visitsToNextLevel"
+        android:layout_alignTop="@+id/text_lifeTimeVisits"
+        android:layout_toRightOf="@+id/image_bizLogo"
+        android:text="Visits to"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/text_nextLevelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/text_visitsTo"
+        android:layout_below="@+id/text_visitsTo"
+        android:layout_toRightOf="@+id/image_bizLogo"
+        android:text="Platinum"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_learnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_visitsTo"
+        android:layout_alignRight="@+id/text_bizAddress"
+        android:text="Learn More" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">ScreenTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_screen1">Screen1</string>
+    <string name="title_activity_radio_button_test">RadioButtonTest</string>
+
+</resources>
