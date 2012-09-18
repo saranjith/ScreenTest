@@ -3,6 +3,7 @@ package com.example.screentest;
 public class Snippets {
 	/**
 	 * @author saran
+	 * This has some useful java snippets, which i'll keep updating
 	 */
 	public static void main(String[] args){
 		try {
