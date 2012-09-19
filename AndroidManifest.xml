@@ -17,6 +17,15 @@
         <activity
             android:name=".Screen1"
             android:label="@string/title_activity_screen1" >
+           <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SwipeGesture"
+            android:label="@string/title_activity_swipe_gesture" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
