@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
-import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -16,13 +15,13 @@ public class SwipeGesture extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipe_gesture);
-        final GestureDetector gdt = new GestureDetector(new GestureListener());
+        final GestureDetector gestureDetector = new GestureDetector(new DetectGesture());
         TextView swipeText = (TextView)findViewById(R.id.swipeText);
         swipeText.setOnTouchListener(new OnTouchListener() {
 			
 			@Override
 			public boolean onTouch(View arg0, MotionEvent event) {
-				gdt.onTouchEvent(event);
+				gestureDetector.onTouchEvent(event);
 	            return true;
 			}
 		});
@@ -32,7 +31,7 @@ public class SwipeGesture extends Activity {
 
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_THRESHOLD_VELOCITY = 200;
-    private class GestureListener extends SimpleOnGestureListener {
+    private class DetectGesture extends SimpleOnGestureListener {
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
             if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
